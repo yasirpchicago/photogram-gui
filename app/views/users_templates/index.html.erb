@@ -1,20 +1,14 @@
 
 <h1>List of users</h1>
 
-
 <table border = "1">
 <tr>
-<th>
-ID
-</th>
 
-<th>
-Username
-</th>
+<th>ID</th>
 
-<th>
+<th>Username</th>
 
-</th>
+<th></th>
 
 </tr>
 
@@ -25,7 +19,10 @@ Username
 
   <td><%= a_user.username %></td>
 
-   <td>Show details</td>
+   <td>
+   <a href = "/users/<%= a_user.username %>">
+   Show details
+   </td>
 
 </tr>
 <% end %>
